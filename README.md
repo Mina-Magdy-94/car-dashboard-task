@@ -1,7 +1,18 @@
 # Project Name
 Car Dashboard task for Vekelez
 
-## what are the main Properties of the task:
+##Main sections:
+<br>
+[1-what are the main Properties of the task?](#what-are-the-main-properties-of-the-task)
+<br>
+[2-Features that will be added in the future](#features-that-will-be-added-in-the-future)
+<br>
+[3-Important Notes](#important-notes)
+
+
+
+
+# what are the main Properties of the task?
 #### 1- The pages are fully responsive on different screens including a fully responsive sidebar that can be toggled into and off the screen
 <br>
 <div>
@@ -58,11 +69,42 @@ Car Dashboard task for Vekelez
 <br>
 <br>
 
-## Features that will be added in the future
-#### 1- Adding a fake api using Json server
+#### 4-There are 3 pages on this task
+<br>
+-The "Booking" tab
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212339716-7407735b-1328-4737-86ed-e0d27dbe47e2.png" width='600' height='280'>
+</div>
+<br>
+
+<br>
+-The "Dashboard" tab
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212339752-b0222037-4917-4fa1-beaf-a263c68dcfcb.png" width='600' height='280'>
+</div>
+<br>
+
+<br>
+-The "ErrorPage" which appears on 
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212339784-87751301-b557-4820-aeac-cdf22a6257d3.png" width='600' height='280'>
+</div>
+<br>
+
+# Features that will be added in the future
+#### 1-Adding a fake api using Json server
 #### 2-Using a state management tool (like Redux Toolkit) and axios to fetch data from backend
 #### 3-Adding Dark & Light modes buttons that on click "set state" of a style object and save the new state of the style object in local storage,then using this object to set the style of the webPages
 #### 4-Using "useEffect" hook to watch over different states that on their changes the pages should be rendered(component will update)
 #### 5-Using the value of the "select" input to filter the array of cars and render the filtered array which is being watched by "useEffect" hook
+<br>
+
+# Important Notes
+### 1-Localized states were used because there were almost no states that need to be passed from one component to another
+### 2-Globalized states (using contexts or RTK) should only be used on large projects where states are passed between components and where the actual data comes from backend 
+
 
 
