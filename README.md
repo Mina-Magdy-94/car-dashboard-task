@@ -63,6 +63,6 @@ Car Dashboard task for Vekelez
 #### 2-Using a state management tool (like Redux Toolkit) and axios to fetch data from backend
 #### 3-Adding Dark & Light modes buttons that on click "set state" of a style object and save the new state of the style object in local storage,then using this object to set the style of the webPages
 #### 4-Using "useEffect" hook to watch over different states that on their changes the pages should be rendered(component will update)
-
+#### 5-Using the value of the "select" input to filter the array of cars and render the filtered array which is being watched by "useEffect" hook
 
 
