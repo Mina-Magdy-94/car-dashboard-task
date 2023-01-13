@@ -41,18 +41,18 @@ const Sidebar = () => {
     })
 
     return (
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+        <div className="offcanvas-md offcanvas-start" tabIndex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
             <div className="d-flex flex-column">
                 <div className="align-items-end d-none d-md-flex gap-1 offcanvas-title pt-2 ps-2" id="offcanvasResponsiveLabel">
-                    <div style={{ backgroundColor: `#A162F7` }} className='p-1 pt-0 rounded'>
+                    <div className='logo-image-div p-1 pt-0 rounded'>
                         <img src={logo} alt="logo" />
                     </div>
                     <span className='fw-bold fs-4 text-end mb-0'>Motiv.</span>
                 </div>
 
-                <div class="offcanvas-header">
+                <div className="offcanvas-header">
                     <div className="d-flex align-items-end gap-1 offcanvas-title pt-2 ps-2" id="offcanvasResponsiveLabel">
-                        <div style={{ backgroundColor: `#A162F7` }} className='p-1 pt-0 rounded'>
+                        <div className='logo-image-div p-1 pt-0 rounded'>
                             <img src={logo} alt="logo" />
                         </div>
                         <span className='fw-bold fs-4 text-end mb-0'>Motiv.</span>
@@ -60,14 +60,14 @@ const Sidebar = () => {
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
                 </div>
 
-                <div class="offcanvas-body">
-                    <div className='p-2 d-flex flex-column justify-content-between' style={{ height: "93vh" }}>
+                <div className="offcanvas-body">
+                    <div className='p-2 d-flex flex-column justify-content-between w-100 canvas-body-div'>
                         <div className="row mt-2">
-                            <ul>
+                            <ul className='w-100'>
                                 {upperElements.map((element, index) => {
                                     let itemName = element.paragraph
                                     return (
-                                        <li key={index}>
+                                        <li key={index} className='col-sm-12 col-lg-9'>
                                             <NavLink to={itemName} className='ps-2 text-decoration-none text-capitalize text-dark d-flex gap-2 w-100 p-2 mt-2 rounded' >
                                                 <span>
                                                     {element.icon}
@@ -84,19 +84,19 @@ const Sidebar = () => {
                             </ul>
                         </div>
 
-                        <div className='d-flex flex-column justify-content-between'>
+                        <div className='d-flex flex-column justify-content-between w-100'>
                             <div className="row">
-                                <ul>
+                                <ul className='w-100'>
                                     {lowerElements.map((element, index) => {
                                         let itemName = element.paragraph
                                         return (
-                                            <li key={index}>
-                                                <NavLink to={itemName} className='text-decoration-none text-capitalize text-dark d-flex gap-2 w-100 p-2 rounded' >
+                                            <li key={index} className='col-sm-12 col-lg-9'>
+                                                <NavLink to={itemName} className='text-decoration-none text-capitalize text-dark d-flex gap-2  p-2 rounded' >
                                                     <span>
                                                         {element.icon}
                                                     </span>
 
-                                                    <span>
+                                                    <span className='text-break'>
                                                         {element.paragraph}
                                                     </span>
                                                 </NavLink>

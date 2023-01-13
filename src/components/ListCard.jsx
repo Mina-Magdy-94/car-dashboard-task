@@ -26,10 +26,10 @@ const ListCard = ({ props }) => {
       }
     return (
         <div className='container col-12 p-2'>
-            <div className="d-flex justify-content-between rounded p-3 ms-0" style={{ backgroundColor: `#FFFFFF` }}>
-                <div className="d-flex justify-content-start gap-4 flex-wrap" style={{width: "95%"}}>
-                    <div className="d-flex p-2 bg-danger col-12 col-sm-10 col-md-5 col-lg-4 justify-content-center align-items-center" style={{maxWidth:`295px`}} >
-                        <img src={imgSrc} alt="" style={{maxHeight: "100%", width: "100%"}} />
+            <div className="d-flex justify-content-between rounded p-3 ms-0 list-card-div">
+                <div className="d-flex justify-content-start gap-4 flex-wrap left-list-card-div">
+                    <div className="d-flex p-2 col-12 col-sm-10 col-md-5 col-lg-4 justify-content-center align-items-center list-card-image-div" >
+                        <img src={imgSrc} alt="car" />
                     </div>
                     <div className="d-flex flex-column p-2 col-12 col-sm-10 col-md-5 col-lg-4 ">
                         <p><span className='fw-bold'>Model : </span>{model}</p>
@@ -40,7 +40,7 @@ const ListCard = ({ props }) => {
                     </div>
                 </div>
                 <div>
-                    <span  onClick={toggleSpan} onMouseEnter={(e)=>hoverOnWhiteHeart(e)} onMouseLeave={mouseLeaveHandler} >{heartColor.color===`white`?<BsHeart/>:<BsHeartFill style={{color:`#F84F56`}}/>}</span>
+                    <span  onClick={toggleSpan} onMouseEnter={(e)=>hoverOnWhiteHeart(e)} onMouseLeave={mouseLeaveHandler} >{heartColor.color===`white`?<BsHeart/>:<BsHeartFill className='red-heart'/>}</span>
                 </div>
             </div>
         </div>

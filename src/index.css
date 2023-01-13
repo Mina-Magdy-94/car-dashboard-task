@@ -11,6 +11,14 @@
     background-color: #F3F5F8;
  }
 
+ .logo-image-div{
+   background-color: #A162F7
+ }
+
+ .canvas-body-div{
+   height: 93vh
+ }
+
 
  /* Booking component */
  .dashboard-icon-div {
@@ -67,6 +75,10 @@
  /* ErrorPage */
  .error-div {
     height: 90%;
+ }
+
+ .error-div div{
+   height: 83vh
  }
 
  .err-msg {
@@ -135,4 +147,99 @@
 
  .offcanvas-body {
    padding-top: 0px;
+ }
+
+
+ /* GraphCard */
+.graph-card-div{
+   background-color:#FFFFFF
+}
+
+ .graph-card-heading-div{
+   height: 50vh
+ }
+
+ /* ListCard */
+ .list-card-div{
+   background-color: #FFFFFF
+ }
+
+ .left-list-card-div{
+   width: 95%
+ }
+
+ .list-card-image-div{
+   max-width:295px
+ }
+
+ .list-card-image-div img{
+   max-height: 100%;
+   width: 100%
+ }
+
+ /* Navbar */
+ .navbar-div{
+   background-color: #FFFFFF;
+   position: sticky;
+   top: 0
+ }
+
+ .search-bar-container{
+   background-color: #F5F4F6
+ }
+
+ .notification-bell-div{
+   position: relative
+ }
+
+ .bell-icon{
+   width: 50px
+ }
+
+ .notification-bell-div span{
+   height: 0.4em;
+    width: 0.4em;
+    background-color:red;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 18px
+ }
+
+ /* ProgressChart */
+ .progress-chart-div{
+   background-color: #F5F5F5
+ }
+ .progress-chart-icon-div{
+   border-radius: 50%;
+    width: 24px;
+    height: 24px;
+ }
+
+
+ /* RecommendedCar */
+ .recommended-car-div{
+   height:236px
+ }
+
+ .recommended-car-image-div{
+   max-height:110px
+ }
+
+ .recommended-car-image-div img{
+   max-width:100%;
+   height:100%
+ }
+
+ /* XYGraph */
+ .xy-graph-div{
+   width: 100%;
+   height: 100%
+ }
+
+ /* XYSmoothGraph */
+ .xy-smooth-graph-div{
+   width: 100%;
+   height: 100%
  }

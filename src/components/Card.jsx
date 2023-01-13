@@ -63,7 +63,7 @@ const Card = ({props}) => {
         </div>
 
         <div className="d-flex justify-content-between w-100 mt-2">
-          <div className='d-flex justify-content-start gap-3 bg-success col-9'>
+          <div className='d-flex justify-content-start gap-3 col-9'>
             <div>
               <span><AiOutlineUser className='user-icon'/></span>
               <span className='ms-1 mb-0 text-end'>{numberOfClients}</span>
@@ -74,8 +74,8 @@ const Card = ({props}) => {
             </div>
           </div>
 
-          <div className='d-flex  justify-content-center align-items-center bg-warning col-3'>
-            <p className='fw-bold text-center mb-0 bg-info'>{rentPrice}<span className='text-muted'>/d</span></p>
+          <div className='d-flex  justify-content-center align-items-center col-3'>
+            <p className='fw-bold text-center mb-0'>{rentPrice}<span className='text-muted'>/d</span></p>
           </div>
         </div>
 

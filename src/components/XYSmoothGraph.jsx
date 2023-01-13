@@ -118,7 +118,7 @@ const XYSmoothGraph = (props) => {
 
   // });
 
-  return <div id={props.id} style={{ width: '100%', height: '100%' }}></div>;
+  return <div id={props.id} className='xy-smooth-graph-div'></div>;
 }
 
 export default XYSmoothGraph;
