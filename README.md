@@ -38,7 +38,7 @@ Car Dashboard task for Vekelez
 </div>
 <br>
 
-3-Different styles examples:
+#### 3-Different styles examples:
 <br>
 -"heart" button in any card of the "Booking" page changes into red on hovering and on click
 <br>
@@ -56,4 +56,13 @@ Car Dashboard task for Vekelez
 <img src="https://user-images.githubusercontent.com/112242972/212330327-8fcadf34-d23a-4dea-a352-2ffce0897d7e.png" width='600' height='280'>
 </div>
 <br>
+<br>
+
+## Features that will be added in the future
+#### 1- Adding a fake api using Json server
+#### 2-Using a state management tool (like Redux Toolkit) and axios to fetch data from backend
+#### 3-Adding Dark & Light modes buttons that on click "set state" of a style object and save the new state of the style object in local storage,then using this object to set the style of the webPages
+#### 4-Using "useEffect" hook to watch over different states that on their changes the pages should be rendered(component will update)
+
+
 
