@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Project Name
+Car Dashboard task for Vekelez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## what are the main Properties of the task:
+#### 1- The pages are fully responsive on different screens including a fully responsive sidebar that can be toggled into and off the screen
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212325890-ef8feff3-8624-4971-bc8e-8fdd63ace250.png" width='600' height='280'>
+</div>
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212325984-573bd6d3-d18a-4eab-9a66-3942e89eb858.png" width='600' height='280'>
+</div>
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212326066-e77c7fd4-6201-4c40-9e92-21d10a6896ef.png" width='600' height='280'>
+</div>
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212326289-9bd31990-43b5-46a9-9af4-c27bdd904a3c.png" width='600' height='280'>
+</div>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
 
-### `npm start`
+#### 2-Two buttons that show different layouts on the "Booking" section
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212328390-675fb1e9-ee12-41bc-87dd-7cec24df6d2b.png" width='300' height='140'>
+</div>
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212328464-6ef338d2-2638-4167-b524-64e551b8a0da.png" width='600' height='280'>
+</div>
+<br>
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212328504-b137cabd-585c-43f7-bd45-efec044d24db.png" width='600' height='280'>
+</div>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3-Different styles examples:
+<br>
+-"heart" button in any card of the "Booking" page changes into red on hovering and on click
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212330313-8db88a1c-b8d5-4bc6-a647-e77580677395.png" width='600' height='280'>
+</div>
+<br>
 
-### `npm test`
+<br>
+-on hovering ,the background color of cards of progress bar in the "Dashboard" tab changes 
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212330327-8fcadf34-d23a-4dea-a352-2ffce0897d7e.png" width='600' height='280'>
+</div>
+<br>
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
