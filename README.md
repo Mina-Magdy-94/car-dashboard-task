@@ -13,7 +13,8 @@ Car Dashboard task for Vekelez
 
 
 # what are the main Properties of the task?
-#### 1- The pages are fully responsive on different screens including a fully responsive sidebar that can be toggled into and off the screen
+#### 1- Charts were created using amCharts (as recommended) and the react-circular-progressbar
+#### 2- The pages are fully responsive on different screens including a fully responsive sidebar that can be toggled into and off the screen
 <br>
 <div>
 <img src="https://user-images.githubusercontent.com/112242972/212325890-ef8feff3-8624-4971-bc8e-8fdd63ace250.png" width='600' height='280'>
@@ -34,7 +35,7 @@ Car Dashboard task for Vekelez
 <br>
 
 
-#### 2-Two buttons that show different layouts on the "Booking" section
+#### 3-Two buttons that show different layouts on the "Booking" section
 <br>
 <div>
 <img src="https://user-images.githubusercontent.com/112242972/212328390-675fb1e9-ee12-41bc-87dd-7cec24df6d2b.png" width='300' height='140'>
@@ -49,7 +50,7 @@ Car Dashboard task for Vekelez
 </div>
 <br>
 
-#### 3-Different styles examples:
+#### 4-Different styles examples:
 <br>
 -"heart" button in any card of the "Booking" page changes into red on hovering and on click
 <br>
@@ -69,7 +70,7 @@ Car Dashboard task for Vekelez
 <br>
 <br>
 
-#### 4-There are 3 pages on this task
+#### 5-There are 3 pages on this task
 <br>
 -The "Booking" tab
 <br>
