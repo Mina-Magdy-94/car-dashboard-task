@@ -1,0 +1,138 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ /* ///////////////////////// Pages ///////////////////////////////////// */
+
+ /* Sidebar Component */
+ .active {
+    background-color: #F3F5F8;
+ }
+
+
+ /* Booking component */
+ .dashboard-icon-div {
+    box-shadow: 0px 4px 8px 0px #3535351A
+ }
+
+ .dashboard-icon {
+    height: 21px;
+    width: 21px
+ }
+
+ .listing-icon {
+    height: 25px;
+    width: 25px
+ }
+
+ .icon-to-hover-inactive {
+    background-color: #FFFFFF;
+    color: black;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer
+ }
+
+ .icon-to-hover-active {
+    background-color: #A162F7;
+    color: #FFFFFF;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer
+ }
+
+ .icon-to-hover-active:hover,
+ .icon-to-hover-inactive:hover {
+    background-color: #A162F7;
+    color: #FFFFFF;
+ }
+
+ .chartlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ .chartlist li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+ }
+
+ /* ErrorPage */
+ .error-div {
+    height: 90%;
+ }
+
+ .err-msg {
+    font-size: 300px;
+    text-align: center;
+    color: rgb(220, 53, 69);
+    margin-top: -20px
+ }
+
+ /* Home */
+ .right-side-home {
+    background-color: #F5F5F5
+ }
+
+
+ /* ////////////////////////////// Components ////////////////////////// */
+
+ /* Card */
+ .card-parent-div {
+    background-color: #FFFFFF
+ }
+
+ .red-heart {
+    color: #F84F56
+ }
+
+ .card-div-img {
+    width: 100%
+ }
+
+ .card-div-img img {
+    max-height: 83.25px;
+    height: 100%;
+    max-width: 100%;
+ }
+
+ user-icon {
+    color: #A162F7
+ }
+
+
+ /* circularBar */
+ .circular-bar {
+    background-color: #FFFFFF
+ }
+
+ .circular-bar:hover {
+    background-color: #A162F7;
+    color: #FFFFFF;
+ }
+
+ #offcanvasResponsive ul {
+    list-style-type: none;
+ }
+
+ /* * {
+   border:rgb(0, 0, 0) 1px solid
+ } */
+ @media only screen and (min-width: 768px) {
+   .left-side-home {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+   }
+ } 
+
+ .offcanvas-body {
+   padding-top: 0px;
+ }

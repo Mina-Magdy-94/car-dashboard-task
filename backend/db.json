@@ -1,0 +1,13 @@
+{
+    "cars": [
+      { "id": 1, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car1.png" },
+      { "id": 2, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car2.png" },
+      { "id": 3, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car3.png" },
+      { "id": 4, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car4.png" },
+      { "id": 5, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car5.png" },
+      { "id": 6, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car6.png" },
+      { "id": 7, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car7.png" },
+      { "id": 8, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car8.png" },
+      { "id": 9, "model": "Porshe 718 Cayman S", "type": "Coupe", "numberOfClients":4, "dependency":"Manual","rentPrice":"400$/d","imageSrc":"../src/assets/car9.png" }
+    ]
+  }
