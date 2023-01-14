@@ -13,7 +13,7 @@ Car Dashboard task for Vekelez
 
 
 # what are the main Properties of the task?
-#### 1- Data come from JSON server at port 8080 using RTK and Axios...just write the following cmd on the terminal of backend folder
+#### 1- Data come from JSON server at port 8080 using RTK and Axios...just write the following command on the terminal of backend folder
 ```bash
 json-server --watch db.json --port 8080
 ```
@@ -101,6 +101,20 @@ json-server --watch db.json --port 8080
 </div>
 <br>
 
+#### 7-Spinner during fetching the data from the backend
+
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212470573-6ce6cbe4-f47a-40c1-877e-90e382aaf9d3.png" width='600' height='280'>
+</div>
+<br>
+
+#### 8-Error page to show if we failed to get fetch the data from backend (backend server is not open)(open it using this command
+#### "json-server --watch db.json --port 8080" on the backend folder terminal)
+
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/212470576-c762221b-524b-4582-a824-d37951db1bc8.png" width='600' height='280'>
+</div>
+<br>
 
 
 # Features that will be added in the future
