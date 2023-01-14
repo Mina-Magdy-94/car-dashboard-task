@@ -7,8 +7,6 @@ Car Dashboard task for Vekelez
 <br>
 [2-Features that will be added in the future (updated)](#features-that-will-be-added-in-the-future)
 <br>
-<p>Some features are <span style="color:red">UPDATED</span>.</p>
-<br>
 [3-Important Notes](#important-notes)
 
 
