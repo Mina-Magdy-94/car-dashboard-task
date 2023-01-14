@@ -7,14 +7,17 @@ Car Dashboard task for Vekelez
 <br>
 [2-Features that will be added in the future (updated)](#features-that-will-be-added-in-the-future)
 <br>
+<p>Some features are <span style="color:red">UPDATED</span>.</p>
+<br>
 [3-Important Notes](#important-notes)
 
 
 
 
 # what are the main Properties of the task?
-#### 1- Charts were created using amCharts (as recommended) and the react-circular-progressbar
-#### 2- The pages are fully responsive on different screens including a fully responsive sidebar that can be toggled into and off the screen
+#### 1- Data come from JSON server at port 8080 usong RTK and Axios
+#### 2 Charts were created using amCharts (as recommended) and the react-circular-progressbar
+#### 3- The pages are fully responsive on different screens including a fully responsive sidebar that can be toggled into and off the screen
 <br>
 <div>
 <img src="https://user-images.githubusercontent.com/112242972/212325890-ef8feff3-8624-4971-bc8e-8fdd63ace250.png" width='600' height='280'>
@@ -35,7 +38,7 @@ Car Dashboard task for Vekelez
 <br>
 
 
-#### 3-Two buttons that show different layouts on the "Booking" section
+#### 4-Two buttons that show different layouts on the "Booking" section
 <br>
 <div>
 <img src="https://user-images.githubusercontent.com/112242972/212328390-675fb1e9-ee12-41bc-87dd-7cec24df6d2b.png" width='300' height='140'>
@@ -50,7 +53,7 @@ Car Dashboard task for Vekelez
 </div>
 <br>
 
-#### 4-Different styles examples:
+#### 5-Different styles examples:
 <br>
 -"heart" button in any card of the "Booking" page changes into red on hovering and on click
 <br>
@@ -70,7 +73,7 @@ Car Dashboard task for Vekelez
 <br>
 <br>
 
-#### 5-There are 3 pages on this task
+#### 6-There are 3 pages on this task
 <br>
 -The "Booking" tab
 <br>
@@ -95,6 +98,8 @@ Car Dashboard task for Vekelez
 </div>
 <br>
 
+
+
 # Features that will be added in the future
 #### 1-Adding a fake api using Json server (Done)
 #### 2-Using a state management tool (like Redux Toolkit) and axios to fetch data from backend(Done)
@@ -105,7 +110,7 @@ Car Dashboard task for Vekelez
 
 # Important Notes
 ### 1-Localized states were used because there were almost no states that need to be passed from one component to another
-### 2-Globalized states (using contexts or RTK) should only be used on large projects where states are passed between components and where the actual data comes from backend 
+### 2-Globalized states (using contexts or RTK) should only be used on where states are passed between components and where the actual data comes from backend 
 
 
 
