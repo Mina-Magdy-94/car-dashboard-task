@@ -1,10 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { RxDashboard } from "react-icons/rx";
 import {RxMixerHorizontal} from 'react-icons/rx'
+import { useDispatch, useSelector } from 'react-redux';
+import { MoonLoader } from 'react-spinners';
 import Card from '../components/Card';
 import ListCard from '../components/ListCard';
+import {getAllCars} from '../store/reducer/carSlice'
+
 
 const Booking = () => {
+  const dispatch=useDispatch()
+// dispatch(getAllCars())
+  const {cars,isLoading,networkErr}=useSelector(state=>state.carList)
+  const [carsTorender,setCarsTorender]=useState([])
   let [layout,setLayout]=useState(`grid`)
 
 
@@ -20,17 +28,10 @@ const Booking = () => {
     }
   }
 
-  let cars = [
-    { id: 1, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car1.png" },
-    { id: 2, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car2.png" },
-    { id: 3, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car3.png" },
-    { id: 4, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car4.png" },
-    { id: 5, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car5.png" },
-    { id: 6, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car6.png" },
-    { id: 7, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car7.png" },
-    { id: 8, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car8.png" },
-    { id: 9, model: "Porshe 718 Cayman S", type: "Coupe", numberOfClients: 4, dependency: "Manual", rentPrice: "$400", imgSrc: "/cars/car9.png" }
-  ]
+
+useEffect(()=>{
+  dispatch(getAllCars())
+},[])
 
   return (
     <div className='container p-4'>
@@ -60,20 +61,27 @@ const Booking = () => {
             </div>
           </div>
         </div>
-
-        
       </div>
 
+      {networkErr && (
+        <div className="d-flex justify-content-center align-items-center" style={{height:`60vh`,backgroundColor: `#FFFFFF`}}>
+          <h1 className='mb-0 capitalize text-warning col-12 text-center'>No Cars To Show, Please try again</h1>
+        </div>
+      )}
 
-
+      {isLoading &&
+      (<div className="d-flex justify-content-center align-items-center" style={{height:`60vh`,backgroundColor: `#FFFFFF`}}>
+      <MoonLoader color="rgba(161, 98, 247, 1)" size={210}speedMultiplier={1}/>
+      </div>)
+      }
       <div className='d-flex flex-wrap'>
-        {layout===`grid`? cars.map((element, index) => {
-          return <Card props={element} key={index}/>
-        }):cars.map((element,index)=>{
-          return <ListCard props={element} key={index}/>
+        {layout===`grid`? cars.map((element) => {
+          return <Card theCar={element} key={element.id}/>
+        }):cars.map((element)=>{
+          return <ListCard theCar={element} key={element.id}/>
         })}
       </div>
-
+      
     </div>
   )
 }

@@ -1,27 +1,29 @@
 import React, { useState } from 'react'
 import { BsHeart, BsHeartFill } from 'react-icons/bs'
+import { useDispatch } from 'react-redux'
+import { likeOrUnlikeAcar } from '../store/reducer/carSlice'
 
-const ListCard = ({ props }) => {
-    let { model, type, numberOfClients, dependency, rentPrice, imgSrc } = props
-    let [heartColor,setHeartColor]=useState({
-        color:`white`,
-        action:null
-      })
+const ListCard = ({ theCar }) => {
+    let {id, model, type, numberOfClients, dependency, rentPrice, imageSrc,isLiked } = theCar
+    const dispatch=useDispatch()
+    let [heartColor,setHeartColor]=useState(`white`)
     
       let toggleSpan=()=>{
-        heartColor.color===`red` && heartColor.action ==='hover'?setHeartColor({color:`red`,action:'clicked'}):setHeartColor({color:`white`,action:'clicked'})
+        console.log({id},{theCar})
+        dispatch(likeOrUnlikeAcar([id,{...theCar,isLiked:!isLiked}]))
         }
     
       let hoverOnWhiteHeart=(e)=>{
-        if(heartColor.color===`white`){
-          setHeartColor({color:`red`,action:'hover'})
+        if(!isLiked){
+          console.log(isLiked)
+          setHeartColor(`red`)
         }
       }
       
     
       let mouseLeaveHandler=(e)=>{
-        if(heartColor.action==='hover' && heartColor.color==='red'){
-          setHeartColor({color:`white`,action:`leave`})
+        if(!isLiked){
+          setHeartColor(`white`)
         }
       }
     return (
@@ -29,7 +31,7 @@ const ListCard = ({ props }) => {
             <div className="d-flex justify-content-between rounded p-3 ms-0 list-card-div">
                 <div className="d-flex justify-content-start gap-4 flex-wrap left-list-card-div">
                     <div className="d-flex p-2 col-12 col-sm-10 col-md-5 col-lg-4 justify-content-center align-items-center list-card-image-div" >
-                        <img src={imgSrc} alt="car" />
+                        <img src={imageSrc} alt="car" />
                     </div>
                     <div className="d-flex flex-column p-2 col-12 col-sm-10 col-md-5 col-lg-4 ">
                         <p><span className='fw-bold'>Model : </span>{model}</p>
@@ -40,7 +42,7 @@ const ListCard = ({ props }) => {
                     </div>
                 </div>
                 <div>
-                    <span  onClick={toggleSpan} onMouseEnter={(e)=>hoverOnWhiteHeart(e)} onMouseLeave={mouseLeaveHandler} >{heartColor.color===`white`?<BsHeart/>:<BsHeartFill className='red-heart'/>}</span>
+                    <span  onClick={toggleSpan} onMouseEnter={(e)=>hoverOnWhiteHeart(e)} onMouseLeave={mouseLeaveHandler} >{isLiked || heartColor===`red`?<BsHeartFill className='red-heart'/>:<BsHeart/>}</span>
                 </div>
             </div>
         </div>

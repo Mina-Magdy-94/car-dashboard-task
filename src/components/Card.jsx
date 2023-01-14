@@ -1,57 +1,53 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react'
 import repeat from "../assets/iconrepeat.png"
 import {AiOutlineUser} from 'react-icons/ai'
-import {BsHeartFill} from 'react-icons/bs'
+import {BsHeartFill, BsLayoutSidebar} from 'react-icons/bs'
 import {BsHeart} from 'react-icons/bs'
+import { useDispatch, useSelector } from 'react-redux'
+import { getAllCars, likeOrUnlikeAcar } from '../store/reducer/carSlice'
 
-const Card = ({props}) => {
-  let {model,type,numberOfClients,dependency,rentPrice,imgSrc}=props
-  let [heartColor,setHeartColor]=useState({
-    color:`white`,
-    action:null
-  })
+const Card = ({theCar}) => {
+  console.log({theCar})
+  let {model,type,numberOfClients,dependency,rentPrice,imageSrc,id,isLiked}=theCar
+  console.log({id})
+  let {cars}=useSelector(state=>state.carList)
+  let dispatch=useDispatch()
+  let [heartColor,setHeartColor]=useState(`white`)
 
   let toggleSpan=()=>{
-    heartColor.color===`red` && heartColor.action ==='hover'?setHeartColor({color:`red`,action:'clicked'}):setHeartColor({color:`white`,action:'clicked'})
+    console.log({id},{theCar})
+    dispatch(likeOrUnlikeAcar([id,{...theCar,isLiked:!isLiked}]))
     }
 
   let hoverOnWhiteHeart=(e)=>{
-    if(heartColor.color===`white`){
-      setHeartColor({color:`red`,action:'hover'})
+    if(!isLiked){
+      console.log(isLiked)
+      setHeartColor(`red`)
     }
   }
   
 
   let mouseLeaveHandler=(e)=>{
-    if(heartColor.action==='hover' && heartColor.color==='red'){
-      setHeartColor({color:`white`,action:`leave`})
+    if(!isLiked){
+      setHeartColor(`white`)
     }
   }
 
-  // const ref = useRef(null);
-  // const [height, setHeight] = useState(0);
-
-  // const onResize = useCallback(() => {
-  //   console.log("width:", ref.current.clientWidth, ", height:", ref.current.clientHeight, height)
-  //   if (ref.current) setHeight(ref.current.clientWidth);
-  // }, []);
-  
-  // useEffect(() => {
-  //   console.log("hhhhh1")
-  //   window.addEventListener("resize", onResize);
-  //   onResize();
-  //   return () => {
-  //     console.log("hhhhh2")
-  //     window.removeEventListener("resize", onResize);
-  //   };
-  // }, [ref?.current?.clientWidth]);
+  useEffect(()=>{
+    dispatch(likeOrUnlikeAcar(id,theCar))
+  },[])
 
   return (
     <div className="container col-12 col-sm-6 col-lg-4 p-2">
       <div className='d-flex flex-column p-3 justify-content-center align-items-center rounded card-parent-div'>
         <div className="d-flex justify-content-between w-100">
           <h5>{model}</h5>
-          <span  onClick={toggleSpan} onMouseEnter={(e)=>hoverOnWhiteHeart(e)} onMouseLeave={mouseLeaveHandler} >{heartColor.color===`white`?<BsHeart/>:<BsHeartFill className='red-heart'/>}</span>
+          <span
+            onClick={()=>toggleSpan()}
+            onMouseEnter={(e)=>hoverOnWhiteHeart(e)}
+            onMouseLeave={mouseLeaveHandler}
+          >
+            {isLiked || heartColor===`red`?<BsHeartFill className='red-heart'/>:<BsHeart/>}</span>
         </div>
 
         <div className="d-flex w-100">
@@ -59,7 +55,7 @@ const Card = ({props}) => {
         </div>
 
         <div className="d-flex card-div-img">
-          <img src={imgSrc} alt="" className='mx-auto' />
+          <img src={imageSrc} alt="" className='mx-auto' />
         </div>
 
         <div className="d-flex justify-content-between w-100 mt-2">
