@@ -13,7 +13,7 @@ Car Dashboard task for Vekelez
 
 
 # what are the main Properties of the task?
-#### 1- Data come from JSON server at port 8080 usong RTK and Axios
+#### 1- Data come from JSON server at port 8080 using RTK and Axios
 #### 2 Charts were created using amCharts (as recommended) and the react-circular-progressbar
 #### 3- The pages are fully responsive on different screens including a fully responsive sidebar that can be toggled into and off the screen
 <br>
