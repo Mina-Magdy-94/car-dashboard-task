@@ -5,7 +5,7 @@ Car Dashboard task for Vekelez
 <br>
 [1-what are the main Properties of the task?](#what-are-the-main-properties-of-the-task)
 <br>
-[2-Features that will be added in the future](#features-that-will-be-added-in-the-future)
+[2-Features that will be added in the future (updated)](#features-that-will-be-added-in-the-future)
 <br>
 [3-Important Notes](#important-notes)
 
@@ -96,10 +96,10 @@ Car Dashboard task for Vekelez
 <br>
 
 # Features that will be added in the future
-#### 1-Adding a fake api using Json server
-#### 2-Using a state management tool (like Redux Toolkit) and axios to fetch data from backend
+#### 1-Adding a fake api using Json server (Done)
+#### 2-Using a state management tool (like Redux Toolkit) and axios to fetch data from backend(Done)
 #### 3-Adding Dark & Light modes buttons that on click "set state" of a style object and save the new state of the style object in local storage,then using this object to set the style of the webPages
-#### 4-Using "useEffect" hook to watch over different states that on their changes the pages should be rendered(component will update)
+#### 4-Using "useEffect" hook to watch over different states that on their changes the pages should be rendered(component will update)(Done)
 #### 5-Using the value of the "select" input to filter the array of cars and render the filtered array which is being watched by "useEffect" hook
 <br>
 
