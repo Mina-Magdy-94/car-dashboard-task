@@ -7,11 +7,9 @@ const XYSmoothGraph = (props) => {
   const series1Ref = useRef(null);
   const xAxisRef = useRef(null);
 
-  console.log("current active graph:", props.activeGraph);
 
   // This code will only run one time
   useLayoutEffect(() => {
-    console.log("2")
     let root = am5.Root.new(props.id);
 
     root.setThemes([am5themes_Animated.new(root)]);
@@ -80,7 +78,6 @@ const XYSmoothGraph = (props) => {
     }));
 
     const kFormatter = (num) => {
-      console.log("nummm", num)
       return Math.abs(num) > 999 ? Math.sign(num) * ((Math.abs(num) / 1000).toFixed(1)) + 'k' : Math.sign(num) * Math.abs(num)
     }
 
@@ -107,7 +104,6 @@ const XYSmoothGraph = (props) => {
     // series1Ref.current.data.setAll(props.data);
 
     return () => {
-      console.log("dispose")
       root.dispose();
     };
   });

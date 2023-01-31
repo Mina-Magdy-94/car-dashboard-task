@@ -6,7 +6,7 @@
       "type": "Coupe",
       "numberOfClients": 2,
       "dependency": "Manual",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "cars/car2.png",
       "isLiked": true
     },
@@ -16,7 +16,7 @@
       "type": "Sedan",
       "numberOfClients": 4,
       "dependency": "Automatic",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "/cars/car2.png",
       "isLiked": false
     },
@@ -26,9 +26,9 @@
       "type": "Coupe",
       "numberOfClients": 6,
       "dependency": "Manual",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "/cars/car3.png",
-      "isLiked": false
+      "isLiked": true
     },
     {
       "id": 4,
@@ -36,7 +36,7 @@
       "type": "Sedan",
       "numberOfClients": 4,
       "dependency": "Manual",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "/cars/car4.png",
       "isLiked": false
     },
@@ -46,7 +46,7 @@
       "type": "Coupe",
       "numberOfClients": 5,
       "dependency": "Automatic",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "/cars/car5.png",
       "isLiked": false
     },
@@ -56,7 +56,7 @@
       "type": "Coupe",
       "numberOfClients": 9,
       "dependency": "Automatic",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "/cars/car6.png",
       "isLiked": false
     },
@@ -66,7 +66,7 @@
       "type": "Sedan",
       "numberOfClients": 4,
       "dependency": "Manual",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "/cars/car7.png",
       "isLiked": false
     },
@@ -76,7 +76,7 @@
       "type": "Coupe",
       "numberOfClients": 3,
       "dependency": "Automatic",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "/cars/car8.png",
       "isLiked": false
     },
@@ -86,7 +86,7 @@
       "type": "Coupe",
       "numberOfClients": 4,
       "dependency": "Manual",
-      "rentPrice": "400$/d",
+      "rentPrice": 400,
       "imageSrc": "/cars/car9.png",
       "isLiked": false
     }

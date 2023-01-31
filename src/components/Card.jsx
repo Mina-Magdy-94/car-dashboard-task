@@ -7,21 +7,17 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getAllCars, likeOrUnlikeAcar } from '../store/reducer/carSlice'
 
 const Card = ({theCar}) => {
-  console.log({theCar})
   let {model,type,numberOfClients,dependency,rentPrice,imageSrc,id,isLiked}=theCar
-  console.log({id})
   let {cars}=useSelector(state=>state.carList)
   let dispatch=useDispatch()
   let [heartColor,setHeartColor]=useState(`white`)
 
   let toggleSpan=()=>{
-    console.log({id},{theCar})
     dispatch(likeOrUnlikeAcar([id,{...theCar,isLiked:!isLiked}]))
     }
 
   let hoverOnWhiteHeart=(e)=>{
     if(!isLiked){
-      console.log(isLiked)
       setHeartColor(`red`)
     }
   }
@@ -71,7 +67,7 @@ const Card = ({theCar}) => {
           </div>
 
           <div className='d-flex  justify-content-center align-items-center col-3'>
-            <p className='fw-bold text-center mb-0'>{rentPrice}<span className='text-muted'>/d</span></p>
+            <p className='fw-bold text-center mb-0'>${rentPrice}<span className='text-muted'>/d</span></p>
           </div>
         </div>
 

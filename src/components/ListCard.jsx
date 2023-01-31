@@ -9,13 +9,11 @@ const ListCard = ({ theCar }) => {
     let [heartColor,setHeartColor]=useState(`white`)
     
       let toggleSpan=()=>{
-        console.log({id},{theCar})
         dispatch(likeOrUnlikeAcar([id,{...theCar,isLiked:!isLiked}]))
         }
     
       let hoverOnWhiteHeart=(e)=>{
         if(!isLiked){
-          console.log(isLiked)
           setHeartColor(`red`)
         }
       }

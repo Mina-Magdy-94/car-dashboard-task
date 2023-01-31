@@ -8,7 +8,6 @@ const CircularBar = ({ data, hovering }) => {
 
   let { percentage, progressColor } = data;
   let changeStyleOnHover = (e) => {
-    console.log(e.target.styles)
   }
   return (
     <CircularProgressbar
