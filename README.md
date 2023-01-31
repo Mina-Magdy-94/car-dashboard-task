@@ -117,12 +117,25 @@ json-server --watch db.json --port 8080
 <br>
 
 
+#### 9-Filtering cars according to their model from a dropdown list 
+
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/215853721-03c605c7-10fc-4c78-ae4c-0bbdd7c9afe0.png" width='600' height='280'>
+</div>
+
+<br>
+
+<div>
+<img src="https://user-images.githubusercontent.com/112242972/215853793-a2debee8-ffe7-456c-a1ed-b9ff38d26863.png" width='600' height='280'>
+</div>
+
+
 # Features that will be added in the future
 #### 1-Adding a fake api using Json server (Done)
 #### 2-Using a state management tool (like Redux Toolkit) and axios to fetch data from backend(Done)
 #### 3-Adding Dark & Light modes buttons that on click "set state" of a style object and save the new state of the style object in local storage,then using this object to set the style of the webPages
 #### 4-Using "useEffect" hook to watch over different states that on their changes the pages should be rendered(component will update)(Done)
-#### 5-Using the value of the "select" input to filter the array of cars and render the filtered array which is being watched by "useEffect" hook
+#### 5-Using the value of the "select" input to filter the array of cars and render the filtered array which is being watched by "useEffect" hook(Done)
 <br>
 
 # Important Notes
