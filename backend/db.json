@@ -8,7 +8,7 @@
       "dependency": "Manual",
       "rentPrice": 400,
       "imageSrc": "cars/car2.png",
-      "isLiked": true
+      "isLiked": false
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "dependency": "Automatic",
       "rentPrice": 400,
       "imageSrc": "/cars/car2.png",
-      "isLiked": false
+      "isLiked": true
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "dependency": "Manual",
       "rentPrice": 400,
       "imageSrc": "/cars/car3.png",
-      "isLiked": true
+      "isLiked": false
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "dependency": "Manual",
       "rentPrice": 400,
       "imageSrc": "/cars/car4.png",
-      "isLiked": false
+      "isLiked": true
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "dependency": "Automatic",
       "rentPrice": 400,
       "imageSrc": "/cars/car5.png",
-      "isLiked": false
+      "isLiked": true
     },
     {
       "id": 6,
