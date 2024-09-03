@@ -1,27 +1,27 @@
 {
   "cars": [
     {
-      "id": 1,
+      "id": "1",
       "model": "Mercides",
       "type": "Coupe",
       "numberOfClients": 2,
       "dependency": "Manual",
       "rentPrice": 400,
       "imageSrc": "cars/car2.png",
-      "isLiked": true
+      "isLiked": false
     },
     {
-      "id": 2,
+      "id": "2",
       "model": "Porshe 718 Cayman S",
       "type": "Sedan",
       "numberOfClients": 4,
       "dependency": "Automatic",
       "rentPrice": 400,
       "imageSrc": "/cars/car2.png",
-      "isLiked": false
+      "isLiked": true
     },
     {
-      "id": 3,
+      "id": "3",
       "model": "Toyota",
       "type": "Coupe",
       "numberOfClients": 6,
@@ -31,7 +31,7 @@
       "isLiked": true
     },
     {
-      "id": 4,
+      "id": "4",
       "model": "Porshe 718 Cayman S",
       "type": "Sedan",
       "numberOfClients": 4,
@@ -41,7 +41,7 @@
       "isLiked": false
     },
     {
-      "id": 5,
+      "id": "5",
       "model": "Porshe 718 Cayman S",
       "type": "Coupe",
       "numberOfClients": 5,
@@ -51,7 +51,7 @@
       "isLiked": false
     },
     {
-      "id": 6,
+      "id": "6",
       "model": "Toyota",
       "type": "Coupe",
       "numberOfClients": 9,
@@ -61,7 +61,7 @@
       "isLiked": false
     },
     {
-      "id": 7,
+      "id": "7",
       "model": "Porshe 718 Cayman S",
       "type": "Sedan",
       "numberOfClients": 4,
@@ -71,7 +71,7 @@
       "isLiked": false
     },
     {
-      "id": 8,
+      "id": "8",
       "model": "Porshe 718 Cayman S",
       "type": "Coupe",
       "numberOfClients": 3,
@@ -81,7 +81,7 @@
       "isLiked": false
     },
     {
-      "id": 9,
+      "id": "9",
       "model": "Porshe 718 Cayman S",
       "type": "Coupe",
       "numberOfClients": 4,
