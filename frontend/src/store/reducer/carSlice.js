@@ -7,8 +7,8 @@ const initialState = {
     networkErr: false
 }
 
-// const baseUrl = `http://localhost:8080/cars`
-const baseUrl = `https://backend-owo3swb7p-mina-magdys-projects-cc31b199.vercel.app/cars`
+const baseUrl = `http://localhost:8080/cars`
+// const baseUrl = `https://backend-owo3swb7p-mina-magdys-projects-cc31b199.vercel.app/cars`
 
 export const getAllCars = createAsyncThunk("cars/getAllCars",
     async (args, thunkAPI) => {
